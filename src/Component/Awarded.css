@@ -1,0 +1,50 @@
+.award-container1 {
+    background-color:#ffffff; /* Light background color */
+    text-align: center; /* Center the content */
+    margin: 0px 0; /* Margin for spacing */
+    padding: 15px; /* Padding for inner spacing */
+  }
+  
+  .award-heading1 {
+    font-size: 25px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Space between heading and images */
+    padding-top: 20px; /* Space on top of the heading */
+  }
+  /* new */
+  body {
+    background: #F8F8FF;
+}
+
+.logo-slider {
+    overflow: hidden;
+    padding: 30px 0 0 0;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.logo-slider:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+}
+
+.logos-slide img {
+    width: 183px;
+    height: 83px;
+    margin: 0 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
